@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ASC | Login Page</title>
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";   
+        }
+    </script>
+    <link href="CSS.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="div1">
+        <img src="logo.png" class="img2" />
+        <h1 style="color:#000000;text-align:left;text-shadow:1px 2px #aa0000;">Active Sporting club!</h1>
+    </div>
+    <nav>
+        <h2>
+            <a href="home.html">Home</a> |
+            <a href="Activities.html">Activities</a> |
+            <a href="About us.html">About us</a>  |
+            <a href="Feedback.html">Feedback</a> |
+            <a href="Log out.html">Log out</a>
+        </h2>
+    </nav>
+    <h1 style="background-color: grey;">YOU will find everything you want in Active Sporting club!</h1>
+    <h2 style="text-align:center;">Click left or right arrows to view images</h2>
+    <div class="container">
+
+        <div class="slides">
+            <div class="numbertext">1 / 3</div>
+            <img src="swimming-pool.jpg" style="width:100%;" />
+            <b>Swimming Pools</b>
+        </div>
+        <div class="slides">
+            <div class="numbertext">2 / 3</div>
+            <img src="handball.jpg" style="width:100%;" />
+            <b>Sports fields</b>
+        </div>
+        <div class="slides">
+            <div class="numbertext">3 / 3</div>
+            <img src="park.png" style="width:100%;" />
+            <b>Parks</b>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div><br />
+    <h2>
+        From fields for all kinds of different sports to restaurants, shopping areas
+        and parks... you will find a place for you and your family, where you can feel comfortable,happy,and satisfied!
+    </h2>
+    <h1 style="background-color: grey;">Your SAFETY is our primary concern!</h1>
+    <img src="Security.png" style="margin-left:20%;" />
+    <h2>
+        ASC clubs are secure with professional Security guards in every place! to make sure everyone is safe and everything is going as it should be..you don't need to
+        worry about anything! as long as you are with us, we are here to help you!
+    </h2>
+    <h1 style="background-color: grey;"> Everything is kept CLEAN!</h1>
+    <img src="clean.jpg" style="margin-left:20%; max-height:20%; max-width:60%;" />
+    <h2>
+        We try our best efforts to keep everything clean and shiny...we want to make our envirnoment look as beautiful as it can be...
+        with campagins to plant trees and increase the number of recycling bins to encourage people to help save our Earth!
+    </h2>
+    <h1 style="background-color: grey;"> COACHING has never been better!</h1>
+    <img src="coach.jpg" style="margin-left:20%; max-height:20%; max-width:60%;" />
+    <h2>
+        With our top tier coaching staff you will reach International level of professionalism...they are trained to give you all of tips and coaching strategies in the best way possible
+        to make sure you are eager to learn and improve while they keep track of your progress and give you notes
+    </h2>
+    <h1 style="background-color: grey;">New AQUARIUMS to enjoy!</h1>
+    <img src="aquarium.jpg" style="margin-left:20%;max-height:20%; max-width:60%;" />
+    <h2>
+        for the first time in Egypt! you can visit one of the largest and most beautiful aquariums filled with different and rare sea creatures all for a small fee
+        ...Check it out near the Swimming pools and you will see what Majestic sea life looks like!
+    </h2>
+    <div style="background-color:#aaaaaa;">
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+</body>
+</html>
